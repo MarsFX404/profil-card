@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000, #a855f7, #ffffff);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  background: #ffffff;
+  width: 340px;
+  padding: 28px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4f46e6;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #1f2937;
+}
+
+.role {
+  color: #4f46e5;
+  font-weight: -600;
+  font-size: 0.95rem;
+  margin: 4px 0 12px;
+}
+
+.bio {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button, .contact-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  
+}
+
+button {
+  background-color: #4f46e5;
+  color: white;
+}
+
+button.following {
+  background-color: #10b981;
+}
+
+.contact-btn {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+#followBtn:hover {
+  background-color: #4338ca; /* Warna sedikit lebih gelap saat kursor di atasnya */
+  transform: translateY(-2px); /* Efek tombol sedikit terangkat */
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.35); /* Efek bayangan bercahaya */
+}
+
+.contact-btn:hover {
+  background-color: #d1d5db; /* Warna abu-abu sedikit lebih gelap */
+  transform: translateY(-2px); /* Efek tombol sedikit terangkat */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Efek bayangan halus */
+}
